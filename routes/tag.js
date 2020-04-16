@@ -7,7 +7,7 @@ router.post('/create', tagController.creatTag);
 
 router.delete('/delete/:id', tagController.delete);
 
-router.get('/all', tagController.getTags);
+router.get('/all/:page', tagController.getTags);
 
 router.post('/add', tagController.addTag);
 

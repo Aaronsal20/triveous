@@ -19,7 +19,10 @@ exports.creatTag = async (req, res, next) => {
 }
 
 exports.getTags = async (req, res, next) => {
-    tagSchema.find().then(result => {
+    var perPage = 2;
+    var page = req.params.page || 1;
+    tagSchema.find().sort({ title: 1 }).skip(perPage * page - perPage)
+    .limit(perPage).then(result => {
         res.status(201).json(result)
     }).catch(err => {
         res.status(400).json({

@@ -6,7 +6,7 @@ router.post('/create',bookmarkController.createBookmark);
 
 // router.post('/update', bookmarkController.);
 
-router.get('/all', bookmarkController.getBookmarks);
+router.get('/all/:page', bookmarkController.getBookmarks);
 
 router.post('/delete/:id', bookmarkController.delete);
 
