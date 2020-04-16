@@ -33,8 +33,7 @@ app.use((req, res, next) => {
   next();
 });
 
-var distDir = __dirname + "/dist/";
-app.use(express.static(distDir));
+
 
 app.use("", routes);
 
