@@ -24,6 +24,7 @@ parameters
 
 
 2)  Get all bookmarks(GET request)
+
 /api/bookmark/all/:page
 
 3) Delete bookmark
@@ -32,7 +33,9 @@ parameters
 
 (id = bookmark id)
 
+
 Tag
+
 1. Create tag(POST request).
 
 /api/tag/create 
@@ -42,6 +45,7 @@ parameters
 ⦁	title
 
 2)  Get all tags(GET request)
+
 /api/tag/all/:page
 
 3) Delete tag (DELETE request)
@@ -56,6 +60,7 @@ parameters
 /api/tag/create/add
 
 parameters 
+
 ⦁	bookmark (id)
 
 ⦁	tag (id)
